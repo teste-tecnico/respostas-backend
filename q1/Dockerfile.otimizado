@@ -1,0 +1,10 @@
+# slim-buster : contains the minimal packages needed to run python
+# Recomendado para ambiente de produção pela imagem oficial do python no dockerhub
+FROM python:3.9-slim-buster
+
+COPY app app
+
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+
+CMD ["python", "app/app.py"]
