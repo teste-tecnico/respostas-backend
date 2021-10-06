@@ -1,0 +1,37 @@
+[
+  {
+    "time": 1633562133,
+    "step": 0,
+    "cmd": "START"
+  },
+  {
+    "time": 1633562194,
+    "step": 1,
+    "cmd": "FROM python:3.9-slim-buster"
+  },
+  {
+    "time": 1633562194,
+    "step": 2,
+    "cmd": "COPY app app"
+  },
+  {
+    "time": 1633562194,
+    "step": 3,
+    "cmd": "COPY requirements.txt requirements.txt"
+  },
+  {
+    "time": 1633562194,
+    "step": 4,
+    "cmd": "RUN pip install -r requirements.txt"
+  },
+  {
+    "time": 1633562194,
+    "step": 5,
+    "cmd": "CMD [\"python\", \"app/app.py\"]"
+  },
+  {
+    "time": 1633562194,
+    "step": -1,
+    "cmd": "END"
+  }
+]

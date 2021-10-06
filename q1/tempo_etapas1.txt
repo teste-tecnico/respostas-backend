@@ -1,0 +1,37 @@
+[
+  {
+    "time": 1633558469,
+    "step": 0,
+    "cmd": "START"
+  },
+  {
+    "time": 1633559034,
+    "step": 1,
+    "cmd": "FROM python:latest"
+  },
+  {
+    "time": 1633559034,
+    "step": 2,
+    "cmd": "COPY app app"
+  },
+  {
+    "time": 1633559034,
+    "step": 3,
+    "cmd": "COPY requirements.txt requirements.txt"
+  },
+  {
+    "time": 1633559034,
+    "step": 4,
+    "cmd": "RUN pip install -r requirements.txt"
+  },
+  {
+    "time": 1633559034,
+    "step": 5,
+    "cmd": "CMD [\"python\", \"app/app.py\"]"
+  },
+  {
+    "time": 1633559034,
+    "step": -1,
+    "cmd": "END"
+  }
+]
