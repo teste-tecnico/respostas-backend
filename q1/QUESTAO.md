@@ -40,4 +40,11 @@ Dockerfile e colocar o projeto para funcionar.
 
 ---
 
-*sua resposta aqui*
+Correção 1:
+  Troca da imagem base - Foi utilizado uma imagem da versão 3.9 do python( versão recente) com os pacotes mínimos necessários para rodar o python ```FROM python:3.9-slim-bustern```      
+  
+Correção 2:
+  Bibliotecas desnecessárias - Foram comentadas bilbiotecas consideradas desnecessárias a execução do código (algumas bibliotecas excluídas foram requisitadas por dependência posteriormente)
+ 
+Resultado :   tamanho da imagem ficou em 327MB
+
